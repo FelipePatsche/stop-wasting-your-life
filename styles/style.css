@@ -85,3 +85,59 @@ p.right-arrow{
 .aside-contact h3{
     margin:auto;
 }
+/*Phone version*/
+@media (max-width:800px){
+.box{
+    background-color: whitesmoke;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px #000020;
+    padding: 10px;
+    margin: 5px;
+}
+aside{
+    position:relative;
+    bottom: auto;
+    top:auto;
+    right:auto;
+    width:auto;
+}
+/*Aside location banner*/
+.aside-location{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.aside-location *{
+    display:inline;
+    margin: auto;
+}
+/*Aside return button*/
+.aside-return{
+    margin-right:auto;
+    line-height: 18px;
+    margin-left: 30px;
+    border-radius: 12px;
+}
+/*Aside main content*/
+.aside-main{
+    align-self: center;
+}
+.aside-main h3{
+    font-size: 30px;
+}
+p.right-arrow{
+    margin-left: auto;
+    margin-right:10px;
+}
+/*Aside contact Button*/
+.aside-contact{
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.aside-contact h3{
+    margin:auto;
+}
+}
