@@ -88,6 +88,8 @@ p.right-arrow{
                                         /*Main*/
 main{
     width: calc(100% - 320px);
+    display: flex;
+    flex-direction: column;
 }
 .main-container{
     background-color: #43455C;
@@ -101,9 +103,13 @@ main{
 }
 .main-title{
     background-color: #43455C;
+    margin-right: auto;
+    display: flex;
 }
 .main-title h1{
     color:whitesmoke;
+    display:inline-block;
+
 }
 .main-image img{
     max-width: 300px;
