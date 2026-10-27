@@ -86,7 +86,7 @@ p.right-arrow{
     margin:auto;
 }
 /*Phone version*/
-@media (max-width:800px){
+@media (max-width:800px) or (max-height:500px) {
 .box{
     background-color: whitesmoke;
     border-radius: 30px;
