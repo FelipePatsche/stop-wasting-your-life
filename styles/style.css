@@ -16,7 +16,10 @@ a h3{
     color: #000000;
 }
 body{
+    display: flex;
     font-family: "Inter", sans-serif;
+    flex-direction: column;
+    height: 100vh;
 }
 aside{
     display:flex;
@@ -136,12 +139,13 @@ main{
                                         /*Footer*/
 footer{
     max-width:calc(100% - 320px);
-    flex-grow: 1;
+    margin-top: auto;
 }
 footer .box{
     display: flex;
     background-color: #43455C;
     color: aliceblue;
+    margin-top: auto;
 }
 .box p{
     display:inline-block;
@@ -211,14 +215,23 @@ p.right-arrow{
     margin:auto;
 }
                                         /*Phone Main*/
+                                        
 .main-container{
     background-color: #43455C;
 }
 .main-title{
     background-color: #43455C;
+    margin:25px 100px;
+    display: flex;
+    justify-content: center;
 }
 main{
     width: 100%;
+}
+.main-text{
+    min-width: 200px;
+    max-width: 600px;
+    margin: 50px auto;
 }
 .main-image img{
     max-width: 300px;
