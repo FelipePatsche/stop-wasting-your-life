@@ -2,7 +2,18 @@
 *{
     text-decoration: none;
     margin: 0;
-
+    list-style-type: none;
+}
+a{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+a p{
+    color: #595959;
+}
+a h3{
+    color: #000000;
 }
 body{
     font-family: "Inter", sans-serif;
@@ -59,21 +70,20 @@ nav{
     margin-left: 30px;
     color: #595959;
 }
-/*Aside main content*/
+/*Aside main content list*/
+.content{
+    margin-left: -40px;
+}
 .aside-main{
     display: flex;
     flex-direction: column;
 }
-.aside-main p, .aside-main h3{
+.aside-main a p, .aside-main a h3{
     display: inline-block;
     margin: auto;
 }
-.aside-main h3{
+.aside-main a h3{
     font-size: 30px;
-}
-p.right-arrow{
-    margin-left: auto;
-    margin-right:0px;
 }
 /*Aside contact Button*/
 .aside-contact{
@@ -122,6 +132,21 @@ main{
     justify-content: center;
     justify-self: center;
     margin: auto;
+}
+                                        /*Footer*/
+footer{
+    max-width:calc(100% - 320px);
+    flex-grow: 1;
+}
+footer .box{
+    display: flex;
+    background-color: #43455C;
+    color: aliceblue;
+}
+.box p{
+    display:inline-block;
+    margin: auto;
+
 }
 /*Phone version*/
 @media (max-width:800px) or (max-height:500px) {
@@ -206,5 +231,10 @@ main{
     justify-content: center;
     justify-self: center;
     margin: auto;
+}
+                                        /*Footer*/
+footer{
+    max-width:100%;
+    flex-grow: 1;
 }
 }
