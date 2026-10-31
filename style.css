@@ -10,6 +10,16 @@ a{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    transition: transform 0.2s ease-in-out;
+}
+button{
+transition: transform 0.2s ease-in-out;
+}
+button:hover{
+transform:translateY(-2px);
+}
+a:hover{
+    transform:translateY(-2px);
 }
 a p{
     color: #595959;
@@ -78,6 +88,8 @@ nav{
 /*Aside main content list*/
 .content{
     margin-left: -40px;
+    display: flex;
+    flex-direction: column;
 }
 .aside-main{
     display: flex;
@@ -93,12 +105,22 @@ nav{
 /*Aside contact Button*/
 .aside-contact{
     display: flex;
-    margin-top: auto;
     font-weight: bold;
     font-size: 22px;
 }
 .aside-contact h3{
     margin:auto;
+}
+                                        /*Header*/
+header{
+    width: calc(100% - 320px);
+    display: flex;
+    flex-direction: column;
+}
+.main-title{
+    background-color: #43455C;
+    margin:20px;
+    display: flex;
 }
                                         /*Main*/
 main{
@@ -116,21 +138,17 @@ main{
     max-width: 600px;
     margin: 50px auto;
 }
-.main-title{
-    background-color: #43455C;
-    margin-right: auto;
-    display: flex;
-}
 .main-title h1{
     color:whitesmoke;
     display:inline-block;
 
 }
 .main-image img{
-    max-width: 300px;
+    max-width: 50%;
     border-radius: 60px;
     justify-self: center;
     margin: auto;
+    object-fit: cover;
 }
 .main-image{
     display: flex;
@@ -262,8 +280,21 @@ p.right-arrow{
 .aside-contact h3{
     margin:auto;
 }
+                                        /*Header*/
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-title{
+    background-color: #43455C;
+    margin:10%;
+    display: flex;
+}
                                         /*Phone Main*/
-                                        
+#how{
+    color: #43455C;
+}
 .main-container{
     background-color: #43455C;
 }
@@ -280,18 +311,22 @@ main{
     min-width: 200px;
     max-width: 600px;
     margin: 50px auto;
+    min-width: 0px;
 }
 .main-image img{
     max-width: 300px;
     border-radius: 60px;
     justify-self: center;
     margin: auto;
+    object-fit: cover;
+    min-width: 0px;
 }
 .main-image{
     display: flex;
     justify-content: center;
     justify-self: center;
     margin: auto;
+    min-width: 0px;
 }
                     /*Form*/
 .warning{
@@ -304,5 +339,6 @@ main{
 footer{
     max-width:100%;
     flex-grow: 1;
+    
 }
 }
