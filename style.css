@@ -2,6 +2,7 @@
 *{
     text-decoration: none;
     margin: 0;
+    box-sizing: border-box;
 }
 ul{
     list-style-type: none;
@@ -28,6 +29,8 @@ a h3{
     color: #000000;
 }
 body{
+    background-color: #EDF2F4;
+
     display: flex;
     font-family: "Inter", sans-serif;
     flex-direction: column;
@@ -234,6 +237,10 @@ body{
     margin: 5%;
 }
                                         /*Phone Aside*/
+body{
+    
+    background-color: #EDF2F4;
+}
 nav{
     padding-left: 5%;
     padding-right: 5%;
@@ -328,13 +335,13 @@ main{
     max-width: 600px;
     margin: 5% auto;
 }
-.main-image img{
+.main-image img {
+    width: 100%;
     max-width: 300px;
+    height: auto;
+    box-sizing: border-box;
     border-radius: 60px;
-    justify-self: center;
-    margin: auto;
     object-fit: cover;
-    min-width: 0px;
 }
 .main-image{
     display: flex;
