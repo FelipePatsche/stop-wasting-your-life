@@ -120,7 +120,7 @@ header{
 }
 .main-title{
     background-color: #43455C;
-    margin:10%;
+    margin:20px;
     display: flex;
 }
                                         /*Main*/
@@ -135,9 +135,9 @@ main{
     flex-wrap: wrap;
 }
 .main-text{
-    min-width: 200px;
+    min-width: 0px;
     max-width: 600px;
-    margin: 50px auto;
+    margin: 5% auto;
 }
 .main-title h1{
     color:whitesmoke;
@@ -176,14 +176,15 @@ input, textarea{
     font-family: "Inter", sans-serif;
     border: none;
     border-radius: 30px;
-    padding: 10px;
+    padding: 5px;
+    min-width: 0px;
 }
 label{
     color: aliceblue;
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 button{
     width: 80%;
@@ -196,6 +197,7 @@ button{
     color: aliceblue;
     font-weight: 500;
     font-size: 20px;
+    min-width: 0px;
 }
 .warning{
     font-weight: bold;
@@ -221,18 +223,20 @@ footer .box{
 }
 /*Phone version*/
 @media (max-width:800px) or (max-height:500px) {
-
+body{
+    object-fit:cover;
+}
 .box{
     background-color: whitesmoke;
     border-radius: 30px;
     box-shadow: 0px 4px 4px 0px #000020;
-    padding: 10px;
-    margin: 10px;
+    padding: 5%;
+    margin: 5%;
 }
                                         /*Phone Aside*/
 nav{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 aside{
     position:relative;
@@ -255,7 +259,7 @@ aside{
 .aside-return{
     margin-right:auto;
     line-height: 18px;
-    margin-left: 30px;
+    margin-left: 5%;
     border-radius: 12px;
 }
 /*Aside main content*/
@@ -267,7 +271,7 @@ aside{
 }
 p.right-arrow{
     margin-left: auto;
-    margin-right:10px;
+    margin-right:5%;
 }
 /*Aside contact Button*/
 .aside-contact{
@@ -293,6 +297,15 @@ header{
     display: flex;
 }
                                         /*Phone Main*/
+.main-container {
+    width: auto;
+    min-width: 0;
+    }
+.main-text{
+    min-width: 0px;
+    max-width: 600px;
+    margin: 5% auto;
+}
 #how{
     color: #43455C;
 }
@@ -301,18 +314,19 @@ header{
 }
 .main-title{
     background-color: #43455C;
-    margin:25px 100px;
+    margin:5% 0px;
     display: flex;
     justify-content: center;
+    min-width: 0px;
 }
 main{
     width: 100%;
+    min-width: 0px;
 }
 .main-text{
-    min-width: 200px;
-    max-width: 600px;
-    margin: 50px auto;
     min-width: 0px;
+    max-width: 600px;
+    margin: 5% auto;
 }
 .main-image img{
     max-width: 300px;
@@ -330,12 +344,44 @@ main{
     min-width: 0px;
 }
                     /*Form*/
+ button{
+    width: 80%;
+    height: 50px;
+    align-self: center;
+    background: #009951;
+    border-radius: 30px;
+    border: 0px;
+    font-family: "Inter", sans-serif;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 0px;
+    min-width: 0px;
+    max-width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+
+ 
 .warning{
     font-weight: bold;
     background-color: #BF6A02;
     color: aliceblue;
     border: 1px solid #000000;
+    min-width: 0px;
+    object-fit:cover;
+    max-width: 100%;
 }
+input, textarea{
+    max-width: 100%;
+}
+
+
                                         /*Footer*/
 footer{
     max-width:100%;
